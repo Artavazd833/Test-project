@@ -2,7 +2,7 @@
 
 <div class='main_content' id="fullpage">
 
-<section id="home_sec1">
+<section id="home_sec1"  class="background">
 
       <div class="home_topContent">
 
@@ -30,7 +30,7 @@
 
 
 
-   <section id="home_sec2" >
+   <section id="home_sec2"  class="background" >
 
       <div class='sec2_title title'>
 
@@ -149,13 +149,13 @@
          </div>
 
       </div>
-      
+      <span id='spt1'></span>
       <span id='sev1'></span>
    </section>
 
 
 
-   <section id="home_sec3">
+   <section id="home_sec3"  class="background">
 
       <div class='sec3_container'>
 
@@ -206,18 +206,13 @@
                   </div>
 
                </div>
-
-
-
          </div>
-
       </div>
-      <span id='spt1'></span>
    </section>
 
 
 
-   <section id="home_sec4" >
+   <section id="home_sec4"   class="background">
             <div class='sec4_container'>
             <?php if( have_rows('sec4_slidr') ): 
                   while ( have_rows('sec4_slidr') ) : the_row();
@@ -249,10 +244,11 @@
                      endif; ?>
                      </div>
             </div>
+            <span id='spt2'></span>
             <span id='sev2'></span>  
    </section>
 
-   <section id="home_sec5" >
+   <section id="home_sec5"  class="background" >
 
       <div class='hsec5_container'>
 
@@ -295,11 +291,7 @@
             </div>
 
       </div>
-
-      
-      <span id='spt2'></span>
    </section>
-
 </div>
 
 <div id='scroll_bar'><div>scroll<span></span></div></div>

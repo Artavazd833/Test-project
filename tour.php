@@ -4,7 +4,7 @@
  */
  get_header() ?>
 <div class='main_wraper'> 
-    <section id='tr_tppSec'>
+    <section id='tr_tppSec' class="background">
         <div class='tr_topBG_imgWraper'>
                 <div class='tr_top_img img1'>
                     <div class='tr_top_etext'><?php the_field('top_sec_left_text');?></div>
@@ -29,7 +29,7 @@
         </div>
         
     </section>
-    <section id='tr_sec2'>
+    <section id='tr_sec2' class="background" >
         <div class='tr_sec2_title'>
             <h1>
                 <span><?php the_field('section_2_title1');?></span>
@@ -64,7 +64,7 @@
             endif; ?>
         </div>
     </section>
-    <section id='tr_sec3'>
+    <section id='tr_sec3' class="background">
             <div class='tr_sec3_left'>
                 <div class='tr_sec3_left_top'>
                     <div class='tr_sec3_left_top1'>
@@ -133,7 +133,7 @@
                 </div>
             </div>
     </section>
-    <section id='tr_sec4'>
+    <section id='tr_sec4' class="background">
             <div class='tr_sec4_title'><?php the_field('section4__top_title');?></div>
             <div class='tr_sec4_slide'>
                 <?php if( have_rows('section_4_slider_departments') ): 
@@ -165,7 +165,6 @@
     </section>
     <div id='scroll_bar'><div>scroll<span></span></div></div>
 </div>
-
 <?php get_footer() ?>
 
 

@@ -4770,7 +4770,7 @@ margin-bottom: 24rem;
 }
 #spt1, #spt2{
   position: absolute;
-  top:80px;
+  top:15%;
 }
  section {
  position: relative;
@@ -4787,4 +4787,70 @@ margin-bottom: 24rem;
 }
 #social_icons > div:nth-last-of-type(1){
   margin-bottom: 0px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* homme scrolll efect*/
+
+ html, body {
+	 overflow: hidden;
+}
+ .background {
+	 overflow: hidden;
+	 will-change: transform;
+	 backface-visibility: hidden;
+	 height: 130vh;
+	 position: fixed;
+	 width: 100%;
+	 transform: translateY(30vh);
+	 transition: all 1.2s cubic-bezier(0.22, 0.44, 0, 1);
+}
+
+ .background:first-child {
+	 transform: translateY(0);
+}
+ 
+
+/* Set stacking context of slides */
+ .background:nth-child(1) {
+	 z-index: 6;
+}
+ .background:nth-child(2) {
+	 z-index:5;
+}
+ .background:nth-child(3) {
+	 z-index: 4;
+}
+.background:nth-child(4) {
+  z-index: 3;
+}
+.background:nth-child(5) {
+  z-index: 2;
+}
+.background:nth-child(6) {
+  z-index: 1;
+}
+ .background.up-scroll {
+	 transform: translate3d(0, 0, 0);
+}
+ .background.up-scroll + .background {
+	 transform: translate3d(0, 30vh, 0);
+}
+ .background.down-scroll {
+	 transform: translate3d(0, -110vh, 0);
+}
+
+ .background.down-scroll + .background:not(.down-scroll) {
+	 transform: translate3d(0, 0, 0);
+}
+/* .background:last-of-type {
+  transform: translateY(-45%)!important;
+} */
+ 
+.home_topContent {
+  max-width: 85%;
+  margin: auto;
+  padding: 10% 0;
 }
